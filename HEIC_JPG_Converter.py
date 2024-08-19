@@ -54,4 +54,4 @@ if __name__ == '__main__':
     if imagedirectory is not None:
         for imagepath in os.listdir(imagedirectory):
             if imagepath.endswith('.HEIC') or imagepath.endswith('.heic'):
-                convert_heic_to_jpg(os.path.join(imagedirectory, imagepath))
+                convert_heic_to_jpg(os.path.join(imagedirectory, imagepath),metadata=args.metadata)
